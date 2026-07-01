@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>코레일톡 배리어프리 통합 서비스 기획 | 포트폴리오</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <div class="brand"><span class="dot"></span>KORAIL BARRIER-FREE</div>
+    <div class="navlinks">
+      <a href="#compare">Before / After</a>
+      <a href="#features">핵심 기능</a>
+      <a href="#impact">비즈니스 효과</a>
+      <a href="#demo">데모 체험</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">코레일톡 서비스 기획 · 현장 VOC 기반</div>
+    <h1>글자 대신 그림으로,<br>침묵 대신 <span class="hl">목소리</span>로 안내합니다.</h1>
+    <p class="lead">대중교통 이용객의 절반 이상이 40대 이상입니다. 그런데도 코레일톡은 여전히 작은 글자와 좁은 버튼으로 말합니다. 이 기획은 모바일 화면, 승강장 모니터, 열차 내부를 하나의 배리어프리 경험으로 잇습니다.</p>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-num">ISSUE 01</div>
+        <p>주요 버튼이 작아 터치 미스가 잦고, 눈이 침침한 이용객은 조작 자체가 어렵습니다.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">ISSUE 02</div>
+        <p>좌석 표기가 "5호차 11A" 같은 텍스트뿐이라, 문을 열고도 자리를 못 찾고 헤맵니다.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">ISSUE 03</div>
+        <p>승무원 인력이 부족해 승차권 확인이나 불편사항을 물어봐도 적시에 응답받지 못합니다.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">ISSUE 04</div>
+        <p>고령층 이용 비중은 계속 늘고 있지만, 앱과 열차 환경은 그 속도를 따라가지 못합니다.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== BEFORE / AFTER ===== -->
+<section id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Before → After</div>
+      <h2>같은 화면, 다른 경험</h2>
+      <p>버튼 크기와 좌석 안내 방식만 바꿔도, 승객이 자리를 찾는 데 걸리는 시간과 터치 성공률이 달라집니다.</p>
+    </div>
+
+    <div class="ba-split">
+      <div class="ba-panel before">
+        <span class="ba-tag">BEFORE — 현재 코레일톡</span>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="app-title">코레일톡</div>
+            <div class="btn-mock">승차권 예매확인</div>
+            <div class="btn-mock">좌석 확인</div>
+            <div class="btn-mock">환불/변경</div>
+            <div class="seat-text-mock">5호차 11A</div>
+          </div>
+        </div>
+        <ul>
+          <li>버튼이 작아 오터치가 잦음</li>
+          <li>좌석이 텍스트 코드로만 표시됨</li>
+          <li>승무원 호출 외엔 대응 수단 없음</li>
+        </ul>
+      </div>
+
+      <div class="ba-vs"><span>VS</span></div>
+
+      <div class="ba-panel after">
+        <span class="ba-tag">AFTER — 배리어프리 통합</span>
+        <div class="phone" style="background:var(--navy);">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="app-title">코레일톡 · 실버 모드</div>
+            <div class="btn-mock" style="font-size:15px; padding:16px 8px; background:var(--amber); border-color:var(--amber-deep); box-shadow:0 4px 0 var(--amber-deep);">예매확인</div>
+            <div class="btn-mock" style="font-size:15px; padding:16px 8px; background:var(--amber); border-color:var(--amber-deep); box-shadow:0 4px 0 var(--amber-deep); margin-top:8px;">좌석확인</div>
+            <div class="seat-visual-mock" style="margin-top:10px;">
+              <div></div><div></div><div class="my"></div><div></div>
+              <div></div><div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>버튼이 화면의 절반 크기로 확대</li>
+          <li>내 좌석을 그림 위에 노란색으로 표시</li>
+          <li>AI 태블릿·음성 안내로 즉시 대응</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="metric-bars">
+      <div class="metric-row">
+        <div class="metric-label">버튼 터치 성공률</div>
+        <div class="metric-track"><div class="metric-fill before" data-target="62">0%</div></div>
+        <div class="metric-note">→ 94%<span></span></div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-label">좌석 인지 소요시간</div>
+        <div class="metric-track"><div class="metric-fill before" data-target="78" data-suffix="s" data-label="47초">0초</div></div>
+        <div class="metric-note">→ 8초</div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-label">탑승 중 승무원 호출 건수</div>
+        <div class="metric-track"><div class="metric-fill before" data-target="70" data-label="회당 5.8건">0건</div></div>
+        <div class="metric-note">→ 1.7건</div>
+      </div>
+    </div>
+    <p style="margin-top:14px; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--slate);">* 위 수치는 현장 VOC와 기획 가정에 근거한 추정치이며, 실증 전 검증이 필요합니다.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ===== FEATURES ===== -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Core Solution</div>
+      <h2>화면 하나로 끝나지 않는 기획</h2>
+      <p>모바일 UX, 승강장 인프라, 열차 내부까지 — 세 개의 접점을 하나의 배리어프리 여정으로 설계했습니다.</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v10m0 0l-3-3m3 3l3-3M5 21h14" stroke="#FFC845" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="feat-num">FEATURE 01 · MOBILE UX</div>
+        <h3>들리는 배리어프리 모드</h3>
+        <p>실버 모드를 켜면 주요 버튼이 화면 절반 크기로 커집니다. "내 자리 어디야?"라고 물으면 AI가 스피커로 "오른쪽 통로로 3미터, 창가 쪽입니다"라고 안내합니다.</p>
+        <span class="feat-tag">Web Speech API</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="12" rx="1.5" stroke="#FFC845" stroke-width="2"/><path d="M8 21h8" stroke="#FFC845" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="feat-num">FEATURE 02 · PLATFORM</div>
+        <h3>플랫폼 모니터 매핑</h3>
+        <p>열차 진입 전, 승강장 광고 모니터에 다가오는 호차의 좌석 배치도와 문 방향을 크게 띄웁니다. 타기 전에 동선을 알면 탑승 병목이 사라집니다.</p>
+        <span class="feat-tag">사전 동선 안내</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#FFC845" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#FFC845" stroke-width="2"/></svg>
+        </div>
+        <div class="feat-num">FEATURE 03 · IN-TRAIN</div>
+        <h3>차칸별 AI 승무원 태블릿</h3>
+        <p>객실 통로마다 태블릿을 두어 단순 문의는 AI가 음성·화면으로 즉시 답합니다. 복잡한 민원만 화상으로 승무원에게 연결해 업무 과부하를 줄입니다.</p>
+        <span class="feat-tag">LLM + 화상 인터콤</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUSINESS IMPACT ===== -->
+<section id="impact">
+  <div class="wrap">
+    <div class="impact-section">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Business Impact</div>
+        <h2>기획이 아니라, 지표로 말합니다</h2>
+        <p>민원 대응 부담을 줄이고, 정시성을 지키고, ESG 사회(S) 부문 점수를 높이는 세 가지 효과를 기대합니다.</p>
+      </div>
+
+      <div class="board-grid">
+        <div class="board-card">
+          <div class="board-eyebrow">01 · 인건비 절감</div>
+          <div class="board-number"><span class="count" data-target="35">0</span><span class="unit">%↓</span></div>
+          <p class="board-desc">단순 반복 문의를 AI 태블릿이 흡수해, 승무원은 안전·응급 대응 같은 고난이도 업무에 집중합니다.</p>
+          <div class="board-foot">기준: 차칸당 평균 단순 문의 응대 건수 감소 추정</div>
+        </div>
+        <div class="board-card">
+          <div class="board-eyebrow">02 · 정시성 확보</div>
+          <div class="board-number"><span class="count" data-target="2">0</span><span class="unit">분 30초↓</span></div>
+          <p class="board-desc">플랫폼 사전 좌석 안내로 탑승 시 자리 찾기 지연이 줄어, 출입문 정차 시간 내 승하차가 안정됩니다.</p>
+          <div class="board-foot">기준: 혼잡 시간대 평균 탑승 병목 단축 추정</div>
+        </div>
+        <div class="board-card">
+          <div class="board-eyebrow">03 · ESG 사회(S) 부문</div>
+          <div class="board-number"><span class="count" data-target="1">0</span><span class="unit">등급↑</span></div>
+          <p class="board-desc">고령층·이동약자를 위한 접근성 설계는 공공기관 ESG 평가의 사회적 가치 지표에 직접 반영됩니다.</p>
+          <div class="board-foot">기준: 배리어프리 접근성 자체 평가 등급 상승 추정</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEMO ===== -->
+<section id="demo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">Interactive Demo</div>
+      <h2>직접 눌러보며 체험하세요</h2>
+      <p>아래 세 가지는 실제 동작하는 데모입니다. 버튼을 눌러 실버 모드, 좌석 안내, AI 승무원 응답을 직접 확인해 보세요.</p>
+    </div>
+
+    <div class="demo-shell">
+      <div class="demo-tabs">
+        <button class="demo-tab active" data-tab="a"><span class="n">01</span>실버 모드 토글</button>
+        <button class="demo-tab" data-tab="b"><span class="n">02</span>내 좌석 확인</button>
+        <button class="demo-tab" data-tab="c"><span class="n">03</span>차칸 AI 태블릿</button>
+      </div>
+
+      <!-- DEMO A -->
+      <div class="demo-panel active" id="panel-a">
+        <div class="demo-desc">
+          <h4>들리는 배리어프리 모드</h4>
+          <p>토글을 켜면 코레일톡의 주요 버튼이 즉시 확대됩니다. 눈이 침침하거나 손이 떨려도 오터치 없이 누를 수 있는 크기입니다.</p>
+          <button class="demo-btn" id="toggleSilverBtn">실버 모드 켜기</button>
+        </div>
+        <div class="stage">
+          <div class="demo-phone">
+            <div class="demo-screen">
+              <span class="mode-badge" id="modeBadge">일반 모드</span>
+              <div class="demo-status"><span>09:41</span><span>코레일톡</span></div>
+              <div class="toggle-row">
+                <span class="toggle-label">실버/약자 전용 모드</span>
+                <div class="switch" id="silverSwitch"><div class="knob"></div></div>
+              </div>
+              <div class="demo-app-btn" id="btn1">승차권 예매확인</div>
+              <div class="demo-app-btn" id="btn2">좌석 확인</div>
+              <div class="demo-app-btn" id="btn3">환불 / 변경</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEMO B -->
+      <div class="demo-panel" id="panel-b">
+        <div class="demo-desc">
+          <h4>내 좌석 확인</h4>
+          <p>텍스트 좌석 코드 대신, 실제 객차 내부 배치도 위에 좌석 번호와 통로 위치를 함께 표시합니다. 버튼을 누르면 음성 안내도 함께 재생됩니다.</p>
+          <button class="demo-btn" id="findSeatBtn">내 좌석 확인하기</button>
+          <button class="demo-btn secondary" id="replayVoiceBtn" style="margin-top:8px; display:none;">🔊 음성 다시 듣기</button>
+          <p style="margin-top:14px; font-size:12px; color:var(--slate);" id="voiceSupportNote">* 음성 안내는 브라우저의 음성 합성 기능을 사용합니다. 지원 브라우저에서 실제 소리가 재생됩니다.</p>
+        </div>
+        <div class="stage">
+          <div class="seatmap-wrap">
+            <div class="car">
+              <div class="car-header"><span>5호차</span><span>좌석 번호 · 통로 위치 안내</span></div>
+              <div class="car-grid" id="carGrid"></div>
+              <div class="door">◀ 출입문</div>
+            </div>
+            <div class="voice-bubble" id="voiceBubble">버튼을 눌러 좌석을 확인해 보세요.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEMO C -->
+      <div class="demo-panel" id="panel-c">
+        <div class="demo-desc">
+          <h4>차칸별 AI 승무원 태블릿</h4>
+          <p>승무원이 자리에 없어도, 어르신이 태블릿에 대고 말하면 AI가 즉시 답합니다. 복잡한 민원은 승무원 화상 연결로 자동 전환됩니다.</p>
+          <div class="q-buttons" id="qButtons">
+            <button class="q-btn" data-q="toilet">화장실 어디예요?</button>
+            <button class="q-btn" data-q="wrong">표 잘못 샀는데 어떡해요?</button>
+            <button class="q-btn escalate" data-q="refund">환불 절차가 복잡해서요</button>
+          </div>
+          <button class="demo-btn secondary" id="resetChatBtn" style="margin-top:16px;">대화 초기화</button>
+        </div>
+        <div class="stage">
+          <div class="tablet">
+            <div class="tablet-screen">
+              <div class="chat-log" id="chatLog">
+                <div class="chat-msg ai"><b>AI 승무원</b><br>무엇을 도와드릴까요? 옆에 있는 질문을 눌러보세요.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h3>승객이 화면과 씨름하지 않는 열차</h3>
+    <p>코레일톡 배리어프리 통합 서비스 기획 · 온·오프라인 UX 연결 설계</p>
+    <div class="credit">PORTFOLIO DEMO — BUILT WITH HTML / CSS / VANILLA JS · SINGLE FILE</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
